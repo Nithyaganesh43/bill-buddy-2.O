@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -21,24 +22,12 @@
     <main>
         <div class="login-container">
             <h2>Login</h2>
-            <h2>Scan your ID card</h2>
-            <h2><button onclick="displayError()" style="font-weight: bold; font-size:20px">Scan ID</button></h2>
-            <h2>Enter ID number:</h2>
-            <a href="loginid.html"><button style="font-weight: bold; font-size:20px">Enter ID Number</button></a>
+            <form action="welcome.html">
+                <input type="text" style="font-weight: bold; font-size:20px" placeholder="Enter ID number" name="idNumber" required>
+                <button type="submit" style="font-weight: bold; font-size:20px">Login</button>
+            </form>
         </div>
     </main>
-
     <script src="logout.js"></script>
-    <script>
-        function displayError() {
-            var errorDiv = document.createElement("div");
-            errorDiv.innerText = "Scanning not supported for your device";
-            errorDiv.classList.add("error-message");
-            document.body.appendChild(errorDiv);
-            setTimeout(function() {
-                errorDiv.remove();
-            }, 3000);
-        }
-    </script>
 </body>
 </html>
