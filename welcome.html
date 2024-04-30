@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -25,15 +24,7 @@
             <p id="welcomeMessage"></p>
         </div>
     </main>
+    <script src="welcomename.js"></script>
     <script src="logout.js"></script>
-    <script>
-        window.onload = function() {
-            var urlParams = new URLSearchParams(window.location.search);
-            var idNumber = urlParams.get('idNumber');
-            if(idNumber) {
-                document.getElementById('welcomeMessage').innerText =  idNumber.toUpperCase();
-            }
-        };
-    </script>
 </body>
 </html>
