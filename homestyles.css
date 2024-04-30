@@ -1,0 +1,100 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to bottom right, #0028ff, #00dbff);
+    padding: 10px;
+    color: white;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#logout-btn {
+    background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to logout button */
+}
+
+#logout-btn:hover {
+    background-color: #1976d2;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, #0028ff, #00dbff);
+    padding: 10px 0;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Added flex-wrap */
+}
+
+.footer-buttons button {
+    background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Added bold font */
+    margin-bottom: 10px; /* Added margin to create space between buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to footer buttons */
+}
+
+.footer-buttons button:hover {
+    background-color: #1976d2;
+}
+
+/* CSS for positioning the text and image */
+.info {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 45%;
+    max-width: 300px;
+    background: linear-gradient(to bottom right, #0028ff, #00dbff);
+    padding: 10px;
+    border-radius: 25px;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to text */
+}
+
+.home-img {
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+    width: 90%; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Maximum width */
+    z-index: 1;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Add shadow to image */
+}
