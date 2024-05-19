@@ -28,6 +28,10 @@
             </form>
         </div>
     </main>
-    <script src="logout.js"></script>
+    <script>
+        document.getElementById("logout-btn").addEventListener("click", function() {window.location.href = "index.html";});
+    
+    window.addEventListener("unload", function() {window.location.reload();});
+</script>
 </body>
 </html>

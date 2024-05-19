@@ -15,7 +15,8 @@
     <div class="logo">
         <img src="logo.png" alt="Logo">
         <h1 id="bb">Bill Buddy 2.0</h1>
-    </div>
+       
+    </div><div  id="name"><h1></h1></div> 
     <button id="logout-btn">Logout</button>
     <div class="info">
         <p>This app was created by Nithya Ganesh, K, CSE B, 2023-2027.</p>
@@ -40,6 +41,20 @@
     function redirectTo(page) {
         window.location.href = page;
     }
+
+    // Function to extract the student's name from the URL and display it
+    function displayStudentName() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const studentName = urlParams.get('studentName');
+        if (studentName) {
+            document.getElementById('name').innerText = studentName;
+        }
+    }
+
+    window.onload = function() {
+        displayStudentName(); // Display the student's name in the header
+        document.getElementById("logout-btn").addEventListener("click", function() {window.location.href = "index.html";});
+    };
 </script>
 
 </body>

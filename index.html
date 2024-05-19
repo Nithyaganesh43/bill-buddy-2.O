@@ -3,13 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bill Buddy 2.O</title>
     <style>
-        /* CSS Styles can be added here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        /* Add more styles as needed */
     </style>
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
@@ -35,20 +33,18 @@
             <a href="loginid.html"><button style="font-weight: bold; font-size:20px">Enter ID Number</button></a>
         </div>
     </main>
-
-    <footer>
-
-    </footer>
-    <script src="logout.js"></script>
+    <script>
+        document.getElementById("logout-btn").addEventListener("click", function() {window.location.href = "index.html";});
+    
+    window.addEventListener("unload", function() {window.location.reload();});
+</script>
     <script>
         function displayError() {
             var errorDiv = document.createElement("div");
             errorDiv.innerText = "Scanning not supported for your device";
             errorDiv.classList.add("error-message");
             document.body.appendChild(errorDiv);
-            setTimeout(function() {
-                errorDiv.remove();
-            }, 3000);
+            setTimeout(function() { errorDiv.remove(); }, 3000);
         }
     </script>
 </body>
